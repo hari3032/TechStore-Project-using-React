@@ -364,30 +364,6 @@ const products = [
     rating: 4.7,
     bestseller: true,
   },
-  {
-    id: 30,
-    name: "Music Headphones",
-    brand: "SoundWave",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWr8fLE1ifIbwu_vwbXZZHi18BdzVeKr0nXUCYLpM6g&s=10",
-    price: 7200,
-    originalPrice: 8000,
-    discount: 10,
-    rating: 4.7,
-    bestseller: true,
-  },
-  {
-    id: 30,
-    name: "Music Headphones",
-    brand: "SoundWave",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjWr8fLE1ifIbwu_vwbXZZHi18BdzVeKr0nXUCYLpM6g&s=10",
-    price: 7200,
-    originalPrice: 8000,
-    discount: 10,
-    rating: 4.7,
-    bestseller: true,
-  },
 ];
 
 export default products;
