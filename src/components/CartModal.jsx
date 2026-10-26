@@ -27,8 +27,7 @@ export default function CartModal({
   }, [onClose]);
 
   const totalItems =
-    cartCount ??
-    cartItems.reduce((acc, item) => acc + item.quantity, 0);
+    cartCount ?? cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <div className="cart-sidebar-backdrop" onClick={onClose}>
