@@ -1,0 +1,159 @@
+:root {
+  /* Dark Theme (Default) */
+  --bg-primary: #080f1d;
+  --bg-secondary: #111827;
+  --bg-surface: #131d35;
+  --bg-elevated: #17263d;
+  --bg-input: #111827;
+  --bg-image-container: #f1f5f9;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-price: #ffffff;
+
+  --border-color: #1e293b;
+  --border-card: #293548;
+  --border-input: #334155;
+
+  --primary-accent: #38bdf8;
+  --primary-accent-hover: #7dd3fc;
+  --btn-primary-bg: #38bdf8;
+  --btn-primary-text: #082f49;
+  --btn-primary-hover: #7dd3fc;
+
+  --btn-secondary-bg: transparent;
+  --btn-secondary-text: #e2e8f0;
+  --btn-secondary-border: #475569;
+  --btn-secondary-hover-bg: #1e293b;
+
+  --badge-bg: rgba(56, 189, 248, 0.1);
+  --badge-border: rgba(56, 189, 248, 0.25);
+  --badge-text: #7dd3fc;
+
+  --hero-visual-bg: linear-gradient(145deg, #17263d, #101827);
+  --hero-visual-border: #334155;
+  --hero-visual-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+
+  --card-bg: #111827;
+  --card-border: #293548;
+  --card-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  --card-glow: rgba(56, 189, 248, 0.18);
+
+  --sidebar-bg: #0b1329;
+  --sidebar-header-bg: #080f1d;
+  --sidebar-item-bg: #111a33;
+  --sidebar-item-border: #1e2d4d;
+  --sidebar-footer-bg: #080f1d;
+  --sidebar-border: #1e293b;
+  --sidebar-shadow: -10px 0 35px rgba(0, 0, 0, 0.6);
+
+  --summary-bar-bg: linear-gradient(110deg, #0877e8, #0755b5);
+  --summary-bar-shadow: 0 6px 22px rgba(0, 102, 255, 0.2);
+
+  --footer-bg: #080f1d;
+  --footer-border: #1e293b;
+
+  --toggle-btn-bg: rgba(255, 255, 255, 0.06);
+  --toggle-btn-border: #1e293b;
+  --toggle-btn-color: #f8fafc;
+}
+
+[data-theme="light"] {
+  /* Light Theme */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-surface: #f1f5f9;
+  --bg-elevated: #e2e8f0;
+  --bg-input: #ffffff;
+  --bg-image-container: #f1f5f9;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-price: #0f172a;
+
+  --border-color: #e2e8f0;
+  --border-card: #e2e8f0;
+  --border-input: #cbd5e1;
+
+  --primary-accent: #0284c7;
+  --primary-accent-hover: #0369a1;
+  --btn-primary-bg: #0284c7;
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: #0369a1;
+
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #334155;
+  --btn-secondary-border: #cbd5e1;
+  --btn-secondary-hover-bg: #f1f5f9;
+
+  --badge-bg: rgba(2, 132, 199, 0.08);
+  --badge-border: rgba(2, 132, 199, 0.2);
+  --badge-text: #0284c7;
+
+  --hero-visual-bg: linear-gradient(145deg, #ffffff, #f1f5f9);
+  --hero-visual-border: #e2e8f0;
+  --hero-visual-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --card-shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
+  --card-glow: rgba(2, 132, 199, 0.08);
+
+  --sidebar-bg: #ffffff;
+  --sidebar-header-bg: #f8fafc;
+  --sidebar-item-bg: #f8fafc;
+  --sidebar-item-border: #e2e8f0;
+  --sidebar-footer-bg: #f8fafc;
+  --sidebar-border: #e2e8f0;
+  --sidebar-shadow: -10px 0 35px rgba(0, 0, 0, 0.12);
+
+  --summary-bar-bg: linear-gradient(110deg, #0284c7, #0369a1);
+  --summary-bar-shadow: 0 6px 22px rgba(2, 132, 199, 0.2);
+
+  --footer-bg: #f1f5f9;
+  --footer-border: #e2e8f0;
+
+  --toggle-btn-bg: #ffffff;
+  --toggle-btn-border: #cbd5e1;
+  --toggle-btn-color: #334155;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--primary-accent);
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
